@@ -419,3 +419,16 @@ a {
   align-self: center;
   margin-right: 5px;
 }
+
+@media only screen and (max-width: 480px) {
+  body {
+    background-color: red;
+  }
+  .menu-bar ._left img {
+    margin-left: 0px;
+    display: none;
+  }
+  .menu-bar ._right {
+    display: none;
+  }
+}
