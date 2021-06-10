@@ -26,3 +26,25 @@ function linkClicked (e) {
     behavior: 'smooth'
   });
 }
+
+async function hamburgerClick () {
+  let icon = await document.getElementById('icon')
+  console.log(icon.className)
+  if (icon.className == 'fa fa-bars') {
+    icon.classList.toggle('fa-close')
+    icon.classList.remove('fa-bars')
+  } else {
+    icon.classList.remove('fa-close')
+    icon.classList.toggle('fa-bars')
+  }
+
+  const linkContainer = document.getElementById('right').style
+  console.log(linkContainer)
+  if (linkContainer.height === '0px' || linkContainer.height === '') {
+    linkContainer.height = '135px'
+  } else {
+    linkContainer.height = '0px'
+  }
+
+  
+}

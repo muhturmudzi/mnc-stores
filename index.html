@@ -4,13 +4,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <nav class="menu-bar">
-    <div class="_left">
-      <img src="./assets/logo.png" alt="mnc store" />
+  <nav class="menu-bar" id="menu-bar">
+    <div class="menu-container">
+      <div class="_left">
+        <img src="./assets/logo.png" alt="mnc store" />
+      </div>
+      <div class="_right">
+        <i id="icon" onclick="hamburgerClick()" class="fa fa-bars"></i>
+      </div>
     </div>
-    <div class="_right">
+    <div class="link-container" id="right">
       <ul id="link-container" onclick="linkClicked(event)">
         <li><a id="home-link" href="#" class="link">Beranda</a></li>
         <li><a id="product-link" class="link">Produk</a></li>
@@ -18,11 +24,7 @@
         <li><a id="contact-link" class="link">Kontak Kami</a></li>
       </ul>
     </div>
-    <div class="nav-bar">
-      <span style='font-size:30px;'>&#9776;</span>
-    </div>
   </nav>
-
   <div class="banner">
     <img src="./assets/banner.png" style="border: none; width: 100%;" alt="banner" />
     <span class="text-over-image">Saatnya berbelanja kebutuhan Anda dengan mudah di MNC Store</span>
