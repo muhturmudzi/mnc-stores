@@ -41,7 +41,7 @@ async function hamburgerClick () {
   const linkContainer = document.getElementById('right').style
   console.log(linkContainer)
   if (linkContainer.height === '0px' || linkContainer.height === '') {
-    linkContainer.height = '135px'
+    linkContainer.height = '150px'
   } else {
     linkContainer.height = '0px'
   }
